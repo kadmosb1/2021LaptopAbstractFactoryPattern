@@ -1,18 +1,18 @@
-package factories;
+package onderdelen.factories;
 
-import factories.cpu.*;
-import factories.graphics.*;
-import factories.screen.*;
+import onderdelen.cpu.*;
+import onderdelen.graphics.*;
+import onderdelen.screen.*;
 
 public class EliminaFactory extends LaptopFactory {
 
     @Override
-    public ICPU createCPU () {
+    public CPU createCPU () {
         return new CPU_I7_10870 ();
     }
 
     @Override
-    public IGraphicsCard createGraphicsCard () {
+    public GraphicsCard createGraphicsCard () {
         return new RTX3050 ();
     }
 
